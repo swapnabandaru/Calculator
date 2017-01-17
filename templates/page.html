@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Hey
+	</title>
+
+	<link rel="stylesheet" href="new.css">
+	<script type="text/javascript">	
+		
+	
+
+		function myFunc(){
+
+			
+			var a = ["25","24","356","1","12"];			
+			var c=a.sort();			
+			j= typeof(a);
+			document.getElementById("arrays").innerHTML=c;
+		}
+	 	function myAdd(){
+	 		var a;
+	 		var b;
+	 		a=document.getElementById("xx").value;
+	 		b=document.getElementById("yy").value;
+	 		var c= Number(a) + Number(b) ;
+	 		
+	 		document.getElementById("dem").innerHTML= c;
+	 	}
+
+	 	function mySub(){
+	 		var a;
+	 		var b;
+	 		a=document.getElementById("xx").value;
+	 		b=document.getElementById("yy").value;
+	 		var c= Number(a) - Number(b) ;
+	 		
+	 		document.getElementById("dem").innerHTML= c;
+	 	} 
+
+		function myMul(){
+	 		var a;
+	 		var b;
+	 		a=document.getElementById("xx").value;
+	 		b=document.getElementById("yy").value;
+	 		var c= Number(a) * Number(b) ;
+	 		
+	 		document.getElementById("dem").innerHTML= c;
+	 	}
+
+	 	function myDiv(){
+	 		var a;
+	 		var b;
+	 		a=document.getElementById("xx").value;
+	 		b=document.getElementById("yy").value;
+	 		var c= Number(a) / Number(b) ;
+	 		
+	 		document.getElementById("dem").innerHTML= c;
+		}
+		function myClear(){
+			document.getElementById("xx").value= "";
+			document.getElementById("yy").value= "";
+	 	}
+	 	
+	 	function Myfunction(){
+	 		document.getElementById("myForm").reset();
+	 	}
+	</script>
+</head>
+
+<body>
+<div id="cal" > </div>
+	<div> 
+		<h1 id="arrays" >This is heading 1 
+		</h1> 
+		<p id="p23">  	
+			<b> <i> I am google. You can visit me at <a href="http://www.google.com"> www.google.com</a> 
+			</b> </i> 
+		</p>
+		<p id="demo">
+			<i><b>
+				This paragraph
+				contains         a lot of spaces<br>
+				in the source         code,<br>
+				but the        browser<br>
+				ignores it. 
+			</i></b>
+		</p>
+	 </div>
+
+
+	 <table width=100%> <caption>The big table</caption>
+  		<tr>
+    		<td colspan="2" style= "text-align: center; background-color:grey; color:linen;"  width="20"> <b> City Gallery
+    		</td>
+    	</tr>
+  		<tr>
+   			<td width="50" style="background-color:grey; color:linen; "> <b> London <br>
+    		<b> Tokyo<br>
+    		<b> Paris<br> </td>
+
+    <td width="50" style="background-color:linen; color:grey;"> 
+    <h1 id="p12" style="border-left: 6px solid red;
+    background-color: lightgrey; text-align:center; max-width :200px; margin : auto;"> <b>  London </h1> <br>
+    <p style="letter-spacing: 1px";> <b> London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants. </p> <br>
+    </td>
+    
+  </tr>
+  <tr> 
+   <td colspan="2" width="20" style="background-color:linen; color:grey;"> <b>  End of story. Copyrights &copy do not go to anyone. </tr>
+</table> <br><br>
+
+<ul> <caption>unordered list </caption>
+<li>entry 1</li>
+<li>entry 2</li>
+<li>entry 3</li>
+</ul> 
+
+<ol type="I"> <caption>ordered list </caption>
+<li>entry 1</li>
+<li>entry 2</li>
+<li>entry 3</li>
+</ol> 
+
+ <div id="d35"> <form id="myForm">
+ Number x: <br>
+ 	<input type="number" id= "xx" name="firstname">
+
+ 	<br>
+ Number y: <br>
+ 	<input type="number" id="yy" name="lastname" >  <br>
+
+ 	<button onclick="myAdd()">+</button> <br>
+
+ 	<button onclick="mySub()">-</button> <br>
+
+ 	<button onclick="myMul()">*</button> <br>
+
+ 	<button onclick="myDiv()">/</button> <br>
+
+ 	<button onclick="myClear()">Reset Form</button>
+
+ 	<!--<button onclick="myFunc()">Reset</button> <br>-->
+
+ 	<div> 
+ 	<p id="dem" >  </p> 
+ 	</div>
+
+ Gender: <br>
+ 	<input type="radio" name="gender" value="male"> </input>Male <br>
+	<input type="radio" name="gender" value="female"> </input>Female <br> <br>
+	Level of Study:  
+	<select name="level of study"> 
+
+<option value="Graduate">Graduate</option>
+<option value="Postgraduate">Post graduate </option>
+<option value="PhD">Phd</option> <br>
+
+</select> <br><br>
+
+
+ </form> </div>
+
+ 
+</body>
+</html>

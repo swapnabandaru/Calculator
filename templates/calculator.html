@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	h1{font-family: courier;
+}
+ 	
+
+</style>
+	<title>Calculator</title>
+</head>
+<body>
+
+<h1>Calculator</h1>
+ 
+{% if answer != null %}
+<h2> answer = {{answer}} </h2><br>
+
+
+<div style="background-color:#ffe5e5;
+  display:inline-block;
+ max-width :300px; 
+ border-style:solid;
+ margin : auto;"> <form action="/home" method="get">
+
+
+
+  Number X:<br><br>
+  <input type="number" name="x"><br><br>
+
+  <select name="operation"> 
+<option value="add">Add</option>
+<option value="subtract">Subtract</option>
+<option value="multiply">Multiply</option>
+<option value="divide">Divide</option>
+</select> <br><br>
+
+  Number Y:<br><br>
+  <input type="number" name="y" > <br><br>
+  <input type="submit" value="Calculate"><br><br>
+
+
+
+</form> </div>
+{% endif %}
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
